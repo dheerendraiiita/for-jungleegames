@@ -1,0 +1,41 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Dheerendra",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "webpack --config webpack.config.js --watch"
+  },
+  "author": "Dheerendra",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:edubackendteam/jungleegames-question.git"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "webpack-sources": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "copy-webpack-plugin": "^3.0.1",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.3",
+    "html-minify-loader": "^1.3.0",
+    "jquery": "^3.1.0",
+    "json-loader": "^0.5.4",
+    "on-build-webpack": "^0.1.0",
+    "string-replace-loader": "^1.0.3",
+    "style-loader": "^0.13.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.1.2",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^3.1.1",
+    "webpack-obfuscator": "^0.14.3"
+  }
+}

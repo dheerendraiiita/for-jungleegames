@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="css/angular-material.min.css" rel="stylesheet"> -->
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="128x128">
+
+    <script src="main.module.js"></script>
+
+    <title>Test</title>
+</head>
+
+<body onload="onInit()">
+
+    <div id="default-window" class="cover-window center-align">
+        <div class="search-box">
+            <div class="float-l">
+                <img src="img/arrow.png" />
+            </div>
+            <div>
+                <h1>Find your artist below</h1>
+                <div class="center-align">
+                    <button class="btn p-btn" onclick="openNav()">Search Artist</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="overlayWin" class="sidenav center-align">
+        <div class="b-card gray-b-card selection-box">
+            <div class="b-card-header">
+                <div>
+                    <sapn class="float-l">
+                        <h2>Enter Search Criteria</h2>
+                    </sapn>
+
+                    <span class="float-r pointer" onclick="closeNav()">X</span>
+                </div>
+            </div>
+            <div class="b-card-body">
+                <form name="nameform">
+                    <div class="form-group">
+                        <label for="usr">Artist name:</label>
+                        <input type="text" class="form-control" id="usr" placeholder="Artist name" name="artist" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">No. of tracks:</label>
+                        <input type="number" class="form-control" id="pwd" placeholder="4" name="trackno" required>
+                    </div>
+                    <span id="fError" class="error hide" name="error"></span>
+                    <button type="submit" id="submitbtn" form="nameform" value="Submit" class="btn p-btn margin-l-20-p" onclick="validateForm(nameform)">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="records-container" class="hide">
+        <div class="record-header">
+            <h1>Result Search for
+                <span class="track-search-for"></span>.
+                <span class="clear-text pointer" onclick="resetDefaults()">( clear )</span>
+            </h1>
+        </div>
+
+        <div id="record-content">
+            <div class="record">
+                <div class="record-thumbnail float-l">
+                    <div class="record-thumbnail-circle center-align">
+                        <img class="track-img" alt="track image" />
+                    </div>
+
+                </div>
+                <div class="record-details-area">
+                    <div class="record-name">
+                        <strong>Artist Name:
+                            <span class="artist-name"></span>
+                        </strong>
+                    </div>
+                    <div class="record-track">
+                        <strong>Track Name:
+                            <span class="track-name"></span>
+                        </strong>
+                    </div>
+                    <div class="record-details">
+                        <small class="track-desc"></small>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <style>
+        @font-face {
+            font-family: Gotham-Rounded-Book;
+            src: url('img/Gotham-Rounded-Book.ttf');
+        }
+    </style>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+[
+{
+    "from": "src/index.html",
+    "to": "index.html"
+},
+{
+    "from":
+    {
+        "glob": "./src/**/*.view.html"
+    },
+    "to": "./",
+    "flatten": true
+},
+{
+    "from":
+    {
+        "glob": "./src/img/*"
+    },
+    "to": "./img",
+    "flatten": true
+}]

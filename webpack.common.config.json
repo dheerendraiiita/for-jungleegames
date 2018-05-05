@@ -1,0 +1,9 @@
+{
+    "entry": {
+        "main": "./src/main/main.module.js"
+    },
+    "output": {
+        "path": "./public",
+        "filename": "[name].module.js"
+    }
+}

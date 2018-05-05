@@ -1,0 +1,254 @@
+:root {
+    --color-flash-green: #1baea3;
+    --color-flash-green-dark: #16939c;
+    --color-flash-green-solid-dark: #065e63;
+    --color-error-red: #ff6161;
+    --color-text-default: #777272;
+}
+
+body {
+    font-family: Gotham-Rounded-Book;
+    color: var(--color-text-default);
+}
+
+.cover-window {
+    width: 100%;
+    height: 100%;
+}
+
+.float-l {
+    float: left;
+}
+
+.float-r {
+    float: right;
+}
+
+.center-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    visibility: hidden;
+    display: none;
+}
+
+.btn {
+    padding: 10px 20px;
+    padding: 10px 50px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.p-btn {
+    background: var(--color-flash-green);
+    background: -moz-linear-gradient(top, var(--color-flash-green) 0%, var(--color-flash-green-dark) 100%);
+    background: -webkit-linear-gradient(top, var(--color-flash-green) 0%, var(--color-flash-green-dark) 100%);
+    background: linear-gradient(to bottom, var(--color-flash-green) 0%, var(--color-flash-green-dark) 100%);
+    border-bottom: 2px solid var(--color-flash-green-solid-dark);
+}
+
+.p-btn:hover {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor var(--color-flash-green)+0,16939c+100 */
+    background: var(--color-flash-green); /* Old browsers */
+    background: -moz-linear-gradient(left, var(--color-flash-green) 0%, var(--color-flash-green-dark) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, var(--color-flash-green) 0%, var(--color-flash-green-dark) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, var(--color-flash-green) 0%, var(--color-flash-green-dark) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.b-card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(212, 203, 203, 0.125);
+    border-radius: 0.25rem;
+}
+
+.b-card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.b-card-header {
+    padding: 10px;
+}
+
+.search-box {
+    width: 460px;
+}
+
+/* ****** Second screen ********* */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #797676;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.selection-box {
+    width: 650px;
+    height: 350px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    width: 20%;
+}
+
+.form-control {
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    width: 60%;
+}
+
+.form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.margin-l-20-p {
+    margin-left: 20%;
+}
+
+.error {
+    color: var(--color-error-red);
+    display: block;
+}
+
+/* **********************Tracks ******* */
+#records-container {
+    padding: 40px 30px;
+}
+
+.record-thumbnail {
+}
+
+.record-thumbnail-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.record-details-area {
+    border-bottom: 2px solid #bfbfbf;
+    margin-left: 180px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    min-height: 140px;
+}
+
+.record-track, .record-name, .record-details {
+    padding: 5px 0;
+}
+
+.clear-text {
+    color: var(--color-flash-green-dark);
+    margin-left: 50px;
+}
+
+.grad1 {
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+}
+
+.grad2 {
+    background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+}
+
+.grad3 {
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
+.grad4 {
+    background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+}
+
+.grad5 {
+    background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+}
+
+.grad6 {
+    background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+}
+
+.grad7 {
+    background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);
+}
+
+.grad8 {
+    background-image: linear-gradient(to top, #e8198b 0%, #c7eafd 100%);
+}
