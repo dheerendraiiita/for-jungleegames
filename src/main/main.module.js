@@ -13,11 +13,9 @@ const validateFields = {
     limit: 4,
     errorVisible: false
 }
-
 window.onInit = function () {
 
 }
-
 
 function _setError(elm, cls) {
     if (!validateFields.errorVisible) {
@@ -28,11 +26,9 @@ function _setError(elm, cls) {
 window.openNav = function () {
     document.getElementById("overlayWin").style.width = "100%";
 }
-
 window.closeNav = function () {
     document.getElementById("overlayWin").style.width = "0";
 }
-
 window.validateForm = function (form) {
     let errElm = document.getElementById('fError');
 
@@ -66,7 +62,9 @@ window.validateForm = function (form) {
     }
 }
 
-/***********************************/
+/*****************************************************
+ * Toggle window
+ *****************************************************/
 window.toggleDefaultWindow = function () {
     Util.toggleClass(document.getElementById('default-window'), 'hide');
 }
@@ -105,7 +103,9 @@ function addnode(parentCon, childNode, data) {
 
     parentCon.appendChild(con);
 }
-
+/*****************************************************
+ * Reset data to defaults
+ *******************************************************/
 window.resetDefaults = function () {
     toggleDefaultWindow();
     toggleRecordWindow();

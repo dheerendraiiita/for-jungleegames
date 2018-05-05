@@ -57,7 +57,6 @@
 	    limit: 4,
 	    errorVisible: false
 	};
-
 	window.onInit = function () {};
 
 	function _setError(elm, cls) {
@@ -69,11 +68,9 @@
 	window.openNav = function () {
 	    document.getElementById("overlayWin").style.width = "100%";
 	};
-
 	window.closeNav = function () {
 	    document.getElementById("overlayWin").style.width = "0";
 	};
-
 	window.validateForm = function (form) {
 	    var errElm = document.getElementById('fError');
 
@@ -106,7 +103,9 @@
 	    }
 	};
 
-	/***********************************/
+	/*****************************************************
+	 * Toggle window
+	 *****************************************************/
 	window.toggleDefaultWindow = function () {
 	    _util.Util.toggleClass(document.getElementById('default-window'), 'hide');
 	};
@@ -144,7 +143,9 @@
 
 	    parentCon.appendChild(con);
 	}
-
+	/*****************************************************
+	 * Reset data to defaults
+	 *******************************************************/
 	window.resetDefaults = function () {
 	    toggleDefaultWindow();
 	    toggleRecordWindow();
